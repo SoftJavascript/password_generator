@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(9, 72, 121);
+  font-family: 'Mulish', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+ 
+}
+
+.container {
+  background-color: rgb(3, 45, 78);
+  color: white;
+  padding: 10px 15px;
+  box-shadow: 0 5px 10px rgba(255, 255, 255, 0.3), 0 15px 40px rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  width: 300px;
+  max-width: 100%;
+}
+
+h2 {
+  margin: 20px 0;
+  padding: 0px 20px;
+  text-align: center;
+}
+
+.result-container {
+  margin: 10px 0px;
+  background-color: rgb(5, 30, 50);
+  position: relative;
+  border-radius: 5px;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  font-size: 18px;
+  letter-spacing: 1px;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 15px;
+  box-shadow: 0 1px 4px rgba(49, 49, 49, 0.1), 0 4px 8px rgba(59, 59, 59, 0.1);
+}
+
+.result-container #result {
+  word-wrap: break-word;
+  max-width: calc(100% - 45px);
+
+}
+
+.result-container.btn,i {
+  color: white;
+}
+
+
+button#clipboard {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  box-shadow: 1px 1px 4px 1px rgba(250, 249, 249, 0.3), 0 5px 10px rgba(255, 255, 255, 0.1), 0px 0px 1px 1px rgba(250, 249, 249, 0.1);
+}
+
+.btn {
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  width: 40px;
+  background-color: rgb(7, 124, 213);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-large {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  box-shadow: 1px 1px 4px 1px rgba(250, 249, 249, 0.3), 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+.setting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#length {
+  margin-top: 15px 0;
+  border: 0;
+  border-radius: 1px;
+  outline: none;
+  background-color: rgb(7, 124, 213);
+  color: white;
+}
+
+
+
+
