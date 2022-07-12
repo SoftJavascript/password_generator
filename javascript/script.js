@@ -44,19 +44,9 @@ generateEl.addEventListener('click', () => {
 function generatePassword(lower, upper, number, symbol, length) {
   let generatedPassword = ''
   const typesCount = lower + upper + number + symbol
-
- 
   let typesArrprevious = [{lower}, {upper}, {number}, {symbol}, {lower}, {upper}, {lower}, {upper}]
   var typesArr = [];
-  // function createRandomArr (typesArrprevious){
 
-  //     var typesArr = [{lower}, {upper}, {number}, {symbol}];
-  //     for (let index = 4; index < 40; index++) {
-  //       typesArr[index] = typesArrprevious[Math.floor(Math.random() * 7) + 1];
-  //     }
-  //     console.log(typesArr);
-  //       return typesArr
-  // }
   function randomArray(typesArrprevious, typesArr) {
     if (length <= 6) {
       typesArr = createRandomArr(typesArrprevious.slice(0, 6));
@@ -82,23 +72,12 @@ function generatePassword(lower, upper, number, symbol, length) {
   for (let value of Object.values(typesArr)) {
     var valueArr = value;
     var trueOrFalse = Object.values(value)[0]
-    // console.log(trueOrFalse + " is a string");
     if(trueOrFalse === true){
-      // console.log(trueOrFalse);
-      // console.log(valueArr + " in Function");
       trueArr.push(valueArr)
-      // console.log(trueArr);
     } 
-    // console.log(trueArr);
-    // return(trueArr)
   }
   return(trueArr)
  }
-// console.log(trueArr);
-console.log(keepOnlyTrue(typesArr));
-
-
-
 
   if(typesCount === 0){
     return ''
